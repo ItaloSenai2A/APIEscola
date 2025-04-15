@@ -42,7 +42,7 @@ builder.Services.AddIdentityApiEndpoints<IdentityUser>(options =>
 // Swagger com Autenticação JWT Bearer
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new() { Title = "LojaAPI", Version = "v1" });
+    c.SwaggerDoc("v1", new() { Title = "APIEscola", Version = "v1" });
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         Description = "JWT Authorization header using the Bearer scheme. Example: \"Authorization: Bearer {token}\"",
